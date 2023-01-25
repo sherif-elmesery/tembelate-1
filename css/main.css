@@ -1,0 +1,50 @@
+/*define the global rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "work sans" , sans-serif;
+}
+/*end of global rules*/
+
+.navigation-bar{
+   margin: auto 20px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f8f8ff0f;
+    margin: auto 68px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-menu i{
+    font-weight: 400;
+    position: relative;
+   
+}
+.navigation-menu .links-list{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -100px;
+    list-style: none;
+    background-color:#dbd9d51a;
+
+}
+.navigation-menu .links-list li{
+    padding: 11px;
+    text-align: center;
+}
+.links-list li a{
+    text-decoration: none;
+    color: #046868;
+    
+    
+}
+.links-list li:not(:last-child){
+    border-bottom: 1px solid grey;
+}
