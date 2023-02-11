@@ -7,7 +7,9 @@ const navLinks = document.querySelectorAll('.links-list li a')
 //add function when click on the icon nav menu will appear
 menuIcon.addEventListener('click',showmenu)
 // function when click on the link hide the menu
-navLinks.onclick = hideMenu
+navLinks.forEach(link=>{
+    link.onclick=hideMenu
+})
 function showmenu(){
     navMenu.style.display =("block")
 }
